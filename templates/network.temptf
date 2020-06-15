@@ -62,7 +62,6 @@ resource "aws_lb" "rcliLoadBalancer" {
     depends_on = [ data.aws_security_group.rcli_sg ]
 }
 
-// Error comes from here.
 resource "aws_lb_listener" "rcliLBListener" {
   load_balancer_arn = aws_lb.rcliLoadBalancer.arn
   port              = "80"
