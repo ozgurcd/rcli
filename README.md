@@ -26,6 +26,7 @@ Then, issue the command "make", it should compile the source code and produce a 
 
 ## Usage
 
+```
 RCLI has several command line options, the can be seen by issuing a rcli -h command.
 
 Flags:
@@ -46,7 +47,7 @@ Flags:
       Example:
 
       ./rcli --keypairname=rclitest --profile=rclitest
-
+```
 
 ## Design
 
