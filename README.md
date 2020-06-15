@@ -48,6 +48,10 @@ Flags:
       ./rcli --keypairname=rclitest --profile=rclitest
 
 
+## Design
+
+RCLI relies on template files in the same directory it is being run. Once populated with the correct arguments, using the template files, it generates the Terraform .tf files in the working directory, then calls terraform for init and apply the changes.
+
 ## Authors
 
       Ozgur Demir <ozgurcd@gmail.com>
