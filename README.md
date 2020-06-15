@@ -18,6 +18,12 @@ After the first run Terraform will create state files in the same directory.
 NOTE: By default, RCli uses Amazon Linux 2 AMI for the instances, thus Deployment Template user data is set according to it. If you wish to use a different AMI with a different Linux distribution, you should update the user data section accordingly in templates/autoscaling.temptf.
 
 
+## Build from Source Code
+
+First please modify Makefile to be sure if your Operating System and Architecture is correctly set. In order to compile against Linux TARGET_OS should be set to linux
+
+Then, issue the command "make", it should compile the source code and produce a binary named rcli
+
 ## Usage
 
 RCLI has several command line options, the can be seen by issuing a rcli -h command.
