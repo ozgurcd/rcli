@@ -1,0 +1,16 @@
+{
+    "provider" : {
+        "name" : "aws",
+        "version" : "~> 1.0",
+        "type": "openstack",
+
+        "loginData": {
+            "secretsFile": "",
+            "user_domain_id": "default",
+            "project_domain_id": "default",
+            "tenant_name": "Infrastructure",
+            "auth_url": "https://snapfish-aus2-kvm.platform9.net/keystone/v3",
+            "region": "AUS2-KVM"
+        }
+    }
+}
