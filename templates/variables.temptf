@@ -1,0 +1,38 @@
+// Created by RCLI - {{.DateTime}}
+
+variable "ami-owner" {
+    description = "Owner of AMI's created"
+    type = string
+    default= "{{.AMIOwner}}"
+}
+variable "ami-name-pattern" {
+    description = "Pattern to match for AMI"
+    type = string
+    default = "{{.AMIPattern}}"
+}
+variable "lc_name_prefix" {
+    description = "Prefix for Instances created by Launch Configuration"
+    type = string
+    default = "{{.LCNamePrefix}}"
+}
+variable "instance_type" {
+    description = "Instance Type for new Instances"
+    type = string
+    default = "{{.InstanceType}}"
+}
+variable "key_name" {
+    description = "SSH Key Name to use with New Instances"
+    type = string
+    default = "{{.KeyName}}"
+}
+variable "auto_scale_min_size" {
+    description = ""
+    type = number
+    default = {{.ASMin}}
+}
+variable "auto_scale_max_size" {
+    description = ""
+    type = number
+    default = {{.ASMax}}
+}
+
